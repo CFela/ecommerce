@@ -1,0 +1,11 @@
+.env
+crypto-js
+
+
+react-dom
+xios
+@redux/toolkit
+react-redux
+react-stripe-checkout
+
+Redux chrome extension
