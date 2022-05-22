@@ -100,7 +100,7 @@ const Register = () => {
       })
     });
     const data = await res.json();
-
+    console.log(data);
     if(res.status === 500 || !data){
       window.alert("Invalid Registration");
       console.log("Invalid Registration");
