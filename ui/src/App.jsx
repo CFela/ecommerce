@@ -34,10 +34,10 @@ const App = () => {
           path="/success" element={<Success/>} 
         />
         <Route 
-          path="/login" element={<Login/>} 
+          path="/login" element={user ? <Navigate to = "/" /> : <Login/>} 
         />
         <Route 
-          path="/register" element={<Register/>}
+          path="/register" element={user ? <Navigate to = "/" /> : <Register/>} 
         />
       </Routes>
     </Router>

@@ -179,7 +179,7 @@ const Cart = () => {
         navigate("/success", {data:res.data});
       }catch{}
     };
-    stripeToken && cart.total >= 1 && makeRequest();
+    stripeToken && makeRequest();
   },[stripeToken, cart.total, navigate]);
 
   return (
@@ -188,14 +188,14 @@ const Cart = () => {
       <Announcement />
       <Wrapper>
         <Title>YOUR BAG</Title>
-        <Top>
+        {/* <Top>
           <TopButton>CONTINUE SHOPPING</TopButton>
           <TopTexts>
             <TopText>Shopping Bag(2)</TopText>
             <TopText>Your Wishlist (0)</TopText>
           </TopTexts>
           <TopButton type="filled">CHECKOUT NOW</TopButton>
-        </Top>
+        </Top> */}
         <Bottom>
           <Info>
             {cart.products.map(product=>( 
@@ -217,9 +217,8 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  <Add />
+                <ProductAmount>Qnty:</ProductAmount>
                   <ProductAmount>{product.quantity}</ProductAmount>
-                  <Remove />
                 </ProductAmountContainer>
                 <ProductPrice>$ {product.price * product.quantity}</ProductPrice>
               </PriceDetail>
@@ -245,8 +244,8 @@ const Cart = () => {
               <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
             </SummaryItem>
             <StripeCheckout
-            name="shop"
-            image=""
+            name="buhchium payment"
+            image="http://surl.li/cawil"
             billingAddress
             shippingAddress
             description={`Your total is $${cart.total}`}

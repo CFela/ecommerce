@@ -74,26 +74,23 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <Left>
+        {/* <Left>
           <Language>EN</Language>
           <SearchContainer>
             <Input placeholder="Search" />
             <Search style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
-        </Left>
+        </Left> */}
         <Center>
-          <Link to="/">
-            <Logo>MEDUSA STORE</Logo>
+          <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
+            <Logo>BUHCHIUM</Logo>
           </Link>
         </Center>
         <Right>
-          <Link to="./register">
-            <MenuItem>REGISTER</MenuItem>
-          </Link>
-          <Link to="./login">
+          <Link to="/login" style={{ textDecoration: 'none', color: 'black' }}>
             <MenuItem>SIGN IN</MenuItem>
           </Link>
-          <Link to="./cart">
+          <Link to="/cart"  style={{ color: 'black' }}>
             <MenuItem>
               <Badge badgeContent={quantity} color="primary">
                 <ShoppingCartOutlined />

@@ -116,11 +116,7 @@ const Footer = () => {
           <ListItem>Cart</ListItem>
           <ListItem>Man Fashion</ListItem>
           <ListItem>Woman Fashion</ListItem>
-          <ListItem>Accessories</ListItem>
-          <ListItem>My Account</ListItem>
-          <ListItem>Order Tracking</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Wishlist</ListItem>
+          <ListItem>Kids Fashion</ListItem>
           <ListItem>Terms</ListItem>
         </List>
       </Center>
@@ -133,7 +129,7 @@ const Footer = () => {
           <Phone style={{marginRight:"10px"}}/> +91 96126565713 
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px"}} /> medusastore@gmail.com
+          <MailOutline style={{marginRight:"10px"}} /> buhchium@gmail.com
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>

@@ -52,8 +52,8 @@ const Newsletter = () => {
       <Title>Newsletter</Title>
       <Desc>Get timely updates from your favorite products.</Desc>
       <InputContainer>
-        <Input placeholder="Your email" />
-        <Button>
+        <Input placeholder="Feedback" />
+        <Button onClick={() => window.location.reload(false)}>
           <Send />
         </Button>
       </InputContainer>

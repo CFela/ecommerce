@@ -21,7 +21,7 @@ export default function FeaturedInfo() {
 
   return (
     <div className="featured">
-      <div className="featuredItem">
+      {/* <div className="featuredItem">
         <span className="featuredTitle">Revanue</span>
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">${income[1]?.total}</span>
@@ -33,7 +33,7 @@ export default function FeaturedInfo() {
           </span>
         </div>
         <span className="featuredSub">Compared to last month</span>
-      </div>
+      </div> */}
       {/* <div className="featuredItem">
         <span className="featuredTitle">Sales</span>
         <div className="featuredMoneyContainer">

@@ -12,7 +12,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://bit.ly/3PFMeAA")
       center;
   background-size: cover;
   display: flex;
@@ -74,7 +74,7 @@ const link = styled.a`
 
 const Error = styled.span`
   color: red;
-`
+`;
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -85,7 +85,8 @@ const Login = () => {
   const handleClick = (e) => {
     e.preventDefault();
     login(dispatch, {username, password});
-  }
+  }; 
+  
   return (
     <Container>
       <Wrapper>
@@ -98,8 +99,8 @@ const Login = () => {
           <Button onClick={handleClick} disabled={isFetching}>LOGIN</Button>
           {error && <Error>Something went wrong!</Error>}
         </Form>
-        <Link to="">DO NOT YOU REMEMBER THE PASSWORD?</Link>
-        <Link to="./register">
+        {/* <Link to="" style={{ textDecoration: 'none', color: 'black', fontSize:13 }}>DO NOT YOU REMEMBER THE PASSWORD?</Link> */}
+        <Link to="/register" style={{ textDecoration: 'none', color: 'black' }}>
           <MenuItem>CREATE A NEW ACCOUNT</MenuItem>
         </Link>
       </Wrapper>
